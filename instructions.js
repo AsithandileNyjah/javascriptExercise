@@ -272,12 +272,43 @@ function createCars(brand, model, year, drive){
     drive: drive
     }
 }
-let car1 = createCars ('Ford', 'Figo', 2012, 'Rear wheel drive')
+let car1 = createCars ('Ford', 'Ranger', 2016, 'All wheel drive')
 let car2 = createCars ('Nissan', 'Almera', 2014, 'All wheel drive')
-let car3 = createCars ('Mitsubishu', 'Hardbody', 2011, "Front wheel drive")
+let car3 = createCars ('Mitsubishu', 'Outlander', 2011, "Rear wheel drive")
 let car4 = createCars ('Porche', 'Cayenne', 2020, "All wheel drive")
+
+let car1Info = `The car brand is ${car1.brand}, a ${car1.model} produced in ${car1.year}. It is an ${car1.drive}.`;
+let car2Info = `The car brand is ${car2.brand}, an ${car2.model} produced in ${car2.year}. It is an ${car2.drive}.`;
+let car3Info = `The car brand is ${car3.brand}, an ${car3.model} produced in ${car3.year}. It is a ${car3.drive}.`;
+let car4Info = `The car brand is ${car4.brand}, a ${car4.model} produced in ${car4.year}. It is an ${car4.drive}.`;
+
 // 29. Make sure to write the above sentences for each car inside the corresponding h4 elements
+document.querySelector('[data-car1]').innerText=car1Info
+document.querySelector('[data-car2]').innerText=car2Info
+document.querySelector('[data-car3]').innerText=car3Info
+document.querySelector('[data-car4]').innerText=car4Info
 // 30. Use the array in question10 that you created and create a conditional statement that check if 'BMW' appears in the array. The console should return 'This item does appear in the array' or 'The item does not appear in the array'
+
+if (coolCars='BMW'){
+    console.log(`A BWM apprears in the list`);
+} else {
+    console.log(`A BMW does not appear in the list`);
+}
+
 // 31. Declare an array and give it a value of [5, 18, 14, 16, 2, 1].
-//     Create a program that returns the middle value of the current array, if array length is even return 2 numbers, if the array lengthis odd return 1 number
+
+let kids = [5, 18, 14, 16, 2, 1]
+
+//Create a program that returns the middle value of the current array, if array length is even return 2 numbers, if the array lengthis odd return 1 number
+
+if (kids.length%2==0){
+    console.log(`${kids[2]} ${kids[3]}`);
+} else {
+    console.log(`${kids[0]}`);
+}
+
 // 32. Go back to Question 16 and use the conditional statement you created. The age has to be requested from the user and the message ust be written to the html page in the corresponding element
+
+let ageRequested = prompt('what is your age?')
+
+
